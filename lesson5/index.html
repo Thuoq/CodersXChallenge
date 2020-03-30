@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="payment-method">
 			<h3 class="heading-primary">Payment method</h3>
-			<svg class="question-mark">
+			<svg class="icon question-mark">
 				<use xlink:href="icon/sprite.svg#question"></use>
 			</svg>
 		</div>
@@ -22,10 +22,29 @@
 					<use xlink:href="icon/sprite.svg#mastercard"></use>
 				</svg>
 			</div>
-			<label>Cardholder name</label>
-			<input type="text" placeholder="Diane Miles">
-			<div class="paymnet--details">
-				 
+			<form class="user">
+				<label class="user__card">Cardholder name</label>
+				<input type="text" class="user__text" placeholder="Diane Miles">
+			</form>
+			<div class="row">
+				<div class="card card-number">
+					<label for="card__number" class=" number--card">Card number</label>
+					<input id="card__number" placeholder="1234 6573 8228 7373" type=" number" class="  card__number">
+				</div>
+				<div class="card card-date">
+					<label for="card__date">Date</label>
+					<input type="number" placeholder="10/25" id="card__date" class=" card__date">
+				</div>
+				<div class="card card-ccv">
+					<label for="card__ccv" class="  card__ccv">CCV</label>
+					<input type="number" placeholder="329" id="card__ccv" class=" card--cgv">
+				</div>
+			</div>
+			<div class="footer">
+				<svg class="mark-question">
+					<use xlink:href="icon/sprite.svg#information-button"></use>
+				</svg>
+				<p class="paragraph">Credit Card payments may take up to 24h to processed</p>
 			</div>
 		</div>
 	</div>
