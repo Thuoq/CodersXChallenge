@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+*::before{
+	margin: 0 ;
+	padding: 0;
+	box-sizing: inherit;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+html{
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+body{
+	background-color: #0e0e0e;
+}
+.container{
+	display: inline-block;
+	position: absolute;	
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	margin: 0 auto;
+	padding: 0.5rem;
+	background-color: white;
+	width: 23%;
+}
+.heading__primary{
+	font-size: 0.75rem;
+	border-bottom: 1px dashed #e5e5e5;
+	border-radius: 10%;
+}
+.user{
+	margin-top: 0.5rem;
+	padding: 0.25rem;
+	display: flex;
+	border: 0.5px solid  #e7e7e7;
+	border-radius: 3px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.user .user__photo{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+}
+.user .user__information {
+	align-items: flex-start;
+	margin-left: -3px
+}
+.user .user__name{
+	font-size: 0.4rem;
+	color: #373737;
+}
+.user .user__email{
+	font-size: 0.25rem;
+	color: #bcbcbc;
+}
+.user .user__delete{
+	width: 0.5rem;
+	height: 0.5rem;
+	fill: #f47b82;
+}
