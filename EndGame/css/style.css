@@ -11,6 +11,26 @@ html {
   font-size: 62.5%;
   font-family: 'Roboto Mono', monospace; }
 
+.btn {
+  background-color: #ff1154;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  transition: all 0.2s; }
+  .btn:hover {
+    background-color: #f65858; }
+
+.btn--link {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem 10rem; }
+
+.heading-1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700; }
+
 .container {
   display: grid;
   grid-template-rows: 10rem 50rem 8rem repeat(2, 10rem) 1fr 10rem 8rem 15rem 5rem;
@@ -21,7 +41,6 @@ html {
   grid-column: 1/-1; }
 
 .header {
-  background-color: blue;
   grid-row: 2/3;
   grid-column: 1/-1; }
 
@@ -66,6 +85,21 @@ html {
   grid-row: 10/11;
   grid-column: 2/6; }
 
+.m-sm {
+  margin-bottom: 2rem !important; }
+
+.m-lg {
+  margin-bottom: 8rem !important; }
+
+.m-md {
+  margin-bottom: 4rem !important; }
+
+.m-big {
+  margin-bottom: 6rem !important; }
+
+.center {
+  text-align: center !important; }
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -88,3 +122,27 @@ html {
     text-decoration: none;
     padding: 0 2rem;
     color: #a7a5ac; }
+
+.header {
+  position: relative; }
+  .header__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; }
+  .header__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .header__details {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .header__details p {
+      font-size: 1.6rem;
+      font-weight: 700; }

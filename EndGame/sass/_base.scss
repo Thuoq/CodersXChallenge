@@ -14,3 +14,19 @@ html{
 	font-size: 62.5%;
 	font-family: 'Roboto Mono', monospace;
 }
+.btn{
+	background-color: #ff1154;
+	text-align: center;
+	display: inline-block;  
+	font-size: 1.6rem;
+	border-radius: 3px;
+	transition: all 0.2s;    
+	&:hover{
+		background-color: #f65858;
+	}        
+}    
+.btn--link{
+   text-decoration: none; 
+   color: white;   
+   padding: 1.5rem 10rem;   
+}
