@@ -13,11 +13,11 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: 5rem 20rem 5rem repeat(2, 10rem) 1fr 10rem 8rem 15rem 5rem;
+  grid-template-rows: 10rem 50rem 8rem repeat(2, 10rem) 1fr 10rem 8rem 15rem 5rem;
   grid-template-columns: 1fr repeat(4, minmax(18rem, max-content)) 1fr; }
 
 .navigation {
-  background-color: red;
+  background-color: #f3f3f3;
   grid-column: 1/-1; }
 
 .header {
@@ -65,3 +65,26 @@ html {
   background-color: #0098ab;
   grid-row: 10/11;
   grid-column: 2/6; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem; }
+  .navigation__img {
+    width: 8rem;
+    height: 8rem;
+    color: white; }
+  .navigation__list {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem; }
+  .navigation__item:first-child {
+    border-right: 1px solid #a7a5ac; }
+    .navigation__item:first-child a {
+      color: #357ae8;
+      font-weight: 600; }
+  .navigation__link {
+    text-decoration: none;
+    padding: 0 2rem;
+    color: #a7a5ac; }

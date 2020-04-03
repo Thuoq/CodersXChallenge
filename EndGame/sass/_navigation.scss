@@ -1,0 +1,31 @@
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	padding: 0 2rem;  
+	&__img{
+		width: 8rem;    
+		height: 8rem;
+		color: white;
+	}
+	&__list{
+		display: flex;
+		list-style: none;
+		font-size: 1.5rem;
+
+	}
+	&__item{
+		&:first-child{
+			border-right: 1px solid #a7a5ac;    
+			& a {
+				color: #357ae8;  
+				font-weight: 600;
+			}
+		}
+	} 
+	&__link{
+		text-decoration: none;
+		padding: 0 2rem;  
+		color: #a7a5ac;
+	}
+}
