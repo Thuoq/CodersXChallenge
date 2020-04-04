@@ -1,0 +1,74 @@
+.near-groups{
+	display: grid;
+	grid-template-rows: repeat(2,minmax(min-content,10rem));  
+	grid-template-columns: repeat(4,minmax(max-content,1fr));  
+	grid-gap: 3rem;     
+	padding: 2rem;   
+	&__details{      
+		grid-column: 1/-1;      
+		display: flex;
+		justify-content: space-between;
+		align-items: center;     
+		p{
+			font-size: 1.6rem;
+			font-weight: 700;  
+		}
+	}
+	&__box{
+		display: flex;
+		flex-direction: column; 
+		box-shadow: 0 1rem 4rem rgba(0,0,0,0.2);
+		border-radius: 5px;
+		transition: all 0.2s;
+		overflow: hidden;    
+		cursor: pointer;  
+		&:hover{
+			transform: translateY(-2px);
+		}
+	}
+	&__infor{
+		padding: 0 1.25rem;    
+		p{
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+		& .near-groups__member{
+			font-weight: 300
+		   
+		}
+		& .near-groups__type{
+			font-size: 1.8rem;
+			color: #969696;
+		}
+	}
+	&__title{
+		font-size: 2rem;     
+		margin-bottom: 1rem;       
+	}
+	&__img{
+		height: 20rem;
+		background-size: cover;
+		&--1{
+			background-image: url(https://secure.meetupstatic.com/photos/event/d/a/9/5/600_468475957.jpeg);
+		}
+		&--2{
+			background-image: url(https://secure.meetupstatic.com/photos/event/6/e/2/f/600_480688207.jpeg);
+		}
+	    &--3{
+			background-image: url("https://secure.meetupstatic.com/photos/event/8/f/1/7/600_464556631.jpeg");
+	    }
+	    &--4{
+			background-image: url(https://secure.meetupstatic.com/photos/event/1/5/c/600_473220348.jpeg);
+	    }  
+	}
+	&__btn,&__btn:link,&__btn:visited{
+		text-decoration: none;
+		font-size: 1.6rem;
+		color: #25a5ca;
+		font-weight: 700;  
+	}
+	span{
+		display: block;    
+	}  
+		  
+}
