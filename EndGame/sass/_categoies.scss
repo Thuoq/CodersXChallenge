@@ -1,0 +1,98 @@
+.categoies{
+	display: grid;
+	padding: 2rem;     
+	grid-template-rows: 5rem repeat(5,minmax(20rem,min-content));              
+	grid-template-columns:  repeat(4,minmax(min-content,26rem));      
+	grid-gap: 2rem;     
+	&__details{    
+		grid-column: 1/-1;
+		p{
+			font-size: 1.6rem;
+			font-weight: 700;  
+		}        
+	}
+	&__type{
+		display: flex;
+		flex-direction: column;
+	}
+	&__img{
+		background-position: center center;   
+		height: 20rem;
+	    width: 26rem;
+	    border-radius: 8px; 
+	    overflow: hidden;     
+	    background-size: cover;
+	    &--1{
+	     	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/7/600_450131943.jpeg);  
+	    }
+	    &--2{
+			background-image: url("https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg");
+	    }
+	    &--3{
+			background-image: url("https://secure.meetupstatic.com/photos/event/2/e/9/c/600_450131932.jpeg");
+	    }
+	    &--4{
+			background-image: url("https://secure.meetupstatic.com/photos/event/2/e/a/e/600_450131950.jpeg");
+	    }
+	    &--5{
+			background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/c/600_450131948.jpeg);
+	    }
+	    &--6{
+			background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/b/600_450131931.jpeg);
+	    }
+	    &--7{
+			background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/a/600_450131946.jpeg);
+	    }
+	    &--8{
+			background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/1/600_450131937.jpeg);
+	    }
+	    &--9{
+			background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/f/600_450131951.jpeg);
+	    }
+	    &--10{
+			background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/3/600_450131939.jpeg);
+	    }
+	    &--11{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/6/600_450131942.jpeg);
+	    }
+	    &--12{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/5/600_450131941.jpeg);
+	    }
+	    &--13{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/4/600_450131940.jpeg);
+	    }
+	    &--14{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/4/8/3/f/600_450858495.jpeg);
+	    }
+	    &--15{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/2/600_450131938.jpeg);
+	    }
+	    &--16{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/5/600_450131925.jpeg);
+	    }
+	    &--17{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/8/8/600_450131912.jpeg)
+	    }
+	    &--18{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/6/600_450131926.jpeg);
+	    }
+	    &--19{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/a/600_450131930.jpeg);
+	    }
+	    &--20{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/9/600_450131945.jpeg);
+	    }
+	    &--21{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/9/600_450131929.jpeg);
+	    }
+	    &--22{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/e/600_450131934.jpeg);
+	    }
+	    &--23{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/b/600_450131947.jpeg);
+	    }
+	    &--24{
+	    	background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/7/600_450131927.jpeg);
+	    }
+	}
+}         

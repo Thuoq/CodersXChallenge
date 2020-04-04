@@ -1,6 +1,6 @@
 .container{
 	display: grid;    
-	grid-template-rows: 10rem 50rem 8rem repeat(2,minmax(min-content,30rem)) 1fr 10rem 8rem 15rem 5rem;
+	grid-template-rows: 10rem 50rem 8rem repeat(2,minmax(min-content,max-content)) 1fr 10rem 8rem 15rem 5rem;
 	grid-template-columns: 1fr repeat(4,minmax(30rem,max-content)) 1fr;
 }
 
@@ -8,7 +8,7 @@
 	background-color: #f3f3f3;
 	grid-column: 1/-1;
 }
-.header{    
+.header{          
 	grid-row: 2/3;
 	grid-column: 1/-1;
 
@@ -23,8 +23,7 @@
 	grid-column: 2/6;
 	
 }
-.categoies{
-	background-color: gold;
+.categoies{    
 	grid-row: 5/6;
 	grid-column: 2/6;
 
