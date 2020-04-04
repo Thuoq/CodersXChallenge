@@ -4,9 +4,9 @@
 	align-items: center; 
 	padding: 0 2rem;  
 	&__img{
-		width: 8rem;    
-		height: 8rem;
-		color: white;
+		width: 15rem;    
+		height: 10rem;  
+		color: white;    
 	}
 	&__list{
 		display: flex;
@@ -27,5 +27,9 @@
 		text-decoration: none;
 		padding: 0 2rem;  
 		color: #a7a5ac;
+		transition: all 0.2s;
+		&:hover{
+			color:#357ae8 ;
+		}
 	}
 }

@@ -1,8 +1,7 @@
 .container{
 	display: grid;    
 	grid-template-rows: 10rem 50rem 8rem repeat(2,10rem) 1fr 10rem 8rem 15rem 5rem;
-	grid-template-columns: 1fr repeat(4,minmax(18rem,max-content)) 1fr;
-  
+	grid-template-columns: 1fr repeat(4,minmax(28rem,max-content)) 1fr;
 }
 
 .navigation{
@@ -14,47 +13,41 @@
 	grid-column: 1/-1;
 
 }
-.categories-est{
-	background-color: violet;
+.categories-est{  
 	grid-row: 3/4;
 	grid-column: 1/-1;   
 
 }
-.recent-events{
-	background-color: orangered;
-	grid-row: 4/5;
-	grid-column: 1/-1;
-}
 .near-groups{
 	background-color: green;
-	grid-row: 5/ 6;
+	grid-row: 4/ 5;
 	grid-column: 2/6;
 	
 }
 .categoies{
 	background-color: gold;
-	grid-row: 6/7;
+	grid-row: 5/6;
 	grid-column: 2/6;
 
 }
 .use-app{
-	grid-row: 7/8;
+	grid-row: 6/7;
 	grid-column: 2/6;
 	color: white;  
 	background-color: black;
 }
 .install-app{
 	background-color: #321321;
-	grid-row: 8/9;
+	grid-row: 7/8;
 	grid-column: 2/6;
 }
 .footer{
 	background-color: #ff1154;
-	grid-row: 9/10;
+	grid-row: 8/9;
 	grid-column: 2/6;
 }
 .copyright{
 	background-color:#0098ab;
-	grid-row: 10/11;  
+	grid-row: 9/10;  
 	grid-column: 2/6;
 }
