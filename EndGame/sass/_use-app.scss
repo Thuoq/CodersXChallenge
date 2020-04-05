@@ -1,0 +1,57 @@
+.use-app{
+	display: grid;
+	grid-template-columns: 1fr repeat(4,minmax(30rem,max-content)) 1fr;
+	&__title{
+		margin: 5rem auto; 
+		h1{
+			font-size: 4rem;       
+		}
+	}
+	&__discover{  
+		display: grid;  
+		grid-template-rows: 1fr ;    
+		grid-template-columns: repeat(2,minmax(max-content,1fr));  
+
+		&--detail{
+			display: grid;  
+			grid-column-gap: 2rem;    
+			grid-template-rows: 1fr;          
+			grid-template-columns: repeat(2,minmax(min-content,max-content)); 
+		} 
+	}        
+	&__details{
+		p{
+			font-size: 1.4rem;      
+		}
+	}
+	&__icon{
+		grid-row: 1/-1;  
+		width: 7rem;
+		height: 7rem;           
+		fill: #00a2c7; 
+	}
+	&__link{  
+		grid-column: 2/-1; 
+		display: flex;
+		justify-content: flex-start;  
+		align-items: center;      
+	}
+	&__btn,&_btn:link,&_btn:visited{
+		font-size: 2rem;
+		text-decoration: none;
+		color: #00a2c7;  
+		padding-right: 2rem;  
+	}
+	&__arrows{   
+		width: 2.75rem;
+		height: 2.75rem;  
+		fill: #00a2c7;   
+	}
+	   
+}
+.wrap-content{  
+	padding: 7rem 7rem;       
+	display: grid;
+	grid-column: 2/6;  
+}  
+  

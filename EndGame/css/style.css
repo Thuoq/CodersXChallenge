@@ -31,6 +31,9 @@ html {
   font-size: 3.5rem;
   font-weight: 700; }
 
+.heading-2 {
+  font-size: 3.5rem; }
+
 .heading-3 {
   color: #232a2b;
   font-size: 2rem;
@@ -67,9 +70,9 @@ html {
 
 .use-app {
   grid-row: 6/7;
-  grid-column: 2/6;
+  grid-column: -1/1;
   color: white;
-  background-color: black; }
+  background-color: #0f1721; }
 
 .install-app {
   background-color: #321321;
@@ -79,12 +82,12 @@ html {
 .footer {
   background-color: #ff1154;
   grid-row: 8/9;
-  grid-column: 2/6; }
+  grid-column: -1/1; }
 
 .copyright {
   background-color: #0098ab;
   grid-row: 9/10;
-  grid-column: 2/6; }
+  grid-column: -1/1; }
 
 .m-sm {
   margin-bottom: 2rem !important; }
@@ -192,13 +195,13 @@ html {
       font-weight: 700; }
   .categoies__type {
     display: flex;
-    flex-direction: column;
-    overflow: hidden; }
+    flex-direction: column; }
   .categoies__img {
     background-position: center center;
     height: 20rem;
     width: 26rem;
     border-radius: 8px;
+    overflow: hidden;
     background-size: cover; }
     .categoies__img--1 {
       background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/7/600_450131943.jpeg); }
@@ -331,6 +334,49 @@ html {
     transition: all 0.2s; }
     .navigation__link:hover {
       color: #357ae8; }
+
+.use-app {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(30rem, max-content)) 1fr; }
+  .use-app__title {
+    margin: 5rem auto; }
+    .use-app__title h1 {
+      font-size: 4rem; }
+  .use-app__discover {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, minmax(max-content, 1fr)); }
+    .use-app__discover--detail {
+      display: grid;
+      grid-column-gap: 2rem;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, minmax(min-content, max-content)); }
+  .use-app__details p {
+    font-size: 1.4rem; }
+  .use-app__icon {
+    grid-row: 1/-1;
+    width: 7rem;
+    height: 7rem;
+    fill: #00a2c7; }
+  .use-app__link {
+    grid-column: 2/-1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .use-app__btn, .use-app_btn:link, .use-app_btn:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #00a2c7;
+    padding-right: 2rem; }
+  .use-app__arrows {
+    width: 2.75rem;
+    height: 2.75rem;
+    fill: #00a2c7; }
+
+.wrap-content {
+  padding: 7rem 7rem;
+  display: grid;
+  grid-column: 2/6; }
 
 .header {
   position: relative; }
