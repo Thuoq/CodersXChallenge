@@ -1,7 +1,7 @@
 .container{
 	display: grid;    
-	grid-template-rows: 10rem 50rem 8rem repeat(2,minmax(min-content,max-content)) 1fr 10rem 8rem 15rem 5rem;
-	grid-template-columns: 1fr repeat(4,minmax(30rem,max-content)) 1fr;         
+	grid-template-rows: 10rem 50rem 8rem repeat(2,minmax(min-content,max-content)) 1fr repeat(2,minmax(max-content,30rem)) 15rem 5rem;
+	grid-template-columns: 1fr repeat(4,minmax(30rem,max-content)) 1fr;               
 }
 
 
@@ -36,9 +36,10 @@
 	background-color: #0f1721;
 }
 .install-app{
-	background-color: #321321;
+	background-color: #ffff; 
 	grid-row: 7/8;
 	grid-column: 2/6; 
+	height: 10rem;   
 }
 .footer{
 	background-color: #ff1154;

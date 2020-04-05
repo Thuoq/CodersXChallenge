@@ -45,7 +45,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: 10rem 50rem 8rem repeat(2, minmax(min-content, max-content)) 1fr 10rem 8rem 15rem 5rem;
+  grid-template-rows: 10rem 50rem 8rem repeat(2, minmax(min-content, max-content)) 1fr repeat(2, minmax(max-content, 30rem)) 15rem 5rem;
   grid-template-columns: 1fr repeat(4, minmax(30rem, max-content)) 1fr; }
 
 .navigation {
@@ -75,9 +75,10 @@ html {
   background-color: #0f1721; }
 
 .install-app {
-  background-color: #321321;
+  background-color: #ffff;
   grid-row: 7/8;
-  grid-column: 2/6; }
+  grid-column: 2/6;
+  height: 10rem; }
 
 .footer {
   background-color: #ff1154;
@@ -308,6 +309,29 @@ html {
     font-weight: 700; }
   .near-groups span {
     display: block; }
+
+.install-app {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem; }
+  .install-app__user {
+    height: 25rem; }
+  .install-app__more {
+    display: flex;
+    flex-direction: column; }
+  .install-app__details img {
+    height: 6rem; }
+  .install-app__btn {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #00a2c7;
+    padding-right: 2rem; }
+    .install-app__btn:link, .install-app__btn:visited {
+      text-decoration: none; }
+  .install-app__link {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center; }
 
 .navigation {
   display: flex;
