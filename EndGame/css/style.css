@@ -45,7 +45,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: 10rem 50rem 8rem repeat(2, minmax(min-content, max-content)) 1fr repeat(2, minmax(max-content, 30rem)) 15rem 5rem;
+  grid-template-rows: 10rem 50rem 8rem repeat(2, minmax(min-content, max-content)) 1fr repeat(2, minmax(min-content, 30rem)) minmax(min-content, max-content);
   grid-template-columns: 1fr repeat(4, minmax(30rem, max-content)) 1fr; }
 
 .navigation {
@@ -81,7 +81,7 @@ html {
   height: 10rem; }
 
 .footer {
-  background-color: #ff1154;
+  background-color: #353e48;
   grid-row: 8/9;
   grid-column: -1/1; }
 
@@ -425,3 +425,45 @@ html {
     .header__details p {
       font-size: 1.6rem;
       font-weight: 700; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(30rem, max-content)) 1fr;
+  padding: 5rem 0; }
+  .footer__wrap {
+    grid-column: 2/6;
+    display: flex;
+    flex-direction: column; }
+  .footer__title {
+    flex: 8rem 0 0;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .footer__title h3 {
+      font-size: 2rem;
+      display: inline-block;
+      font-weight: 300;
+      text-decoration: underline;
+      transition: all 0.2s;
+      cursor: pointer; }
+      .footer__title h3:hover {
+        text-decoration: none; }
+  .footer__details {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr)); }
+    .footer__details h3 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #fff; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    list-style: none; }
+  .footer__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1.5rem 0rem 1.5rem 0;
+    font-weight: 300;
+    display: inline-block; }
+    .footer__link:not(:last-child) {
+      padding-bottom: 0rem; }
